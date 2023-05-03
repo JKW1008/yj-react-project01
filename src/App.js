@@ -4,21 +4,23 @@ import { GlobalStyles } from "./styles";
   const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background: red;
     display: flex;
     justify-content: center;`
   
   const GlobalNav = styled.div`
     width: 1000px;
-    background: blue;
-    color: white;
-    justify-content: center;`
+   
+    display: flex;
+    justify-content: space-between;
 
-  const smallNav = styled.div`
+    height: 80px;
+    align-items: center`
+
+  const SmallNav = styled.div`
     display: flex;
     justify-content: space-between;
     div{
-      padiing: 0 15px;
+      padding: 0 15px;
     }
     `
 
@@ -28,16 +30,16 @@ function App() {
   return (
     <div>
       <GlobalStyles/>
-      <Container>
+      <Container> 
         <GlobalNav>
           <div>logo</div>
-          <smallNav>
+          <SmallNav>
           <div>업체소개</div>
           <div>포트폴리오</div>
           <div>사진</div>
           <div>게시판</div>
           <div>연락</div>
-          </smallNav>
+          </SmallNav>
         </GlobalNav>
       </Container>
     </div>
